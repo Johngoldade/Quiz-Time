@@ -10,6 +10,7 @@ on:
 # Jobs to carry out
 jobs:
   test:
+    name: Cypress-Tests
     # Operating system to run job on
     runs-on: ubuntu-latest
 
