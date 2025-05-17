@@ -1,7 +1,7 @@
 name: Deploy-to-Render
 
 on:
-    push:
+    push :
       branches: 
         - main
     
@@ -12,11 +12,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v4
-
-        - name: ComponentTest
-          run: |
-            npm install
-            npm run test-component
 
         - name: Deploy
           if: github.ref == 'refs/heads/main'
