@@ -9,14 +9,15 @@ on:
        
 jobs:
     ci:
+      name: Deploy-to-Render
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v4
 
-        - name: Test
+        - name: ComponentTest
           run: |
             npm install
-            npm run test
+            npm run test-component
 
         - name: Deploy
           if: github.ref == 'refs/heads/main'
