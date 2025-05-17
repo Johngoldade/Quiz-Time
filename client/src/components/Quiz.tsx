@@ -47,7 +47,7 @@ const Quiz = () => {
   if (!quizStarted) {
     return (
       <>
-        <div>
+        <div className="home-style">
           <h1>Welcome to Quiz Time!</h1>
         </div>
         <div className="p-4 text-center">
