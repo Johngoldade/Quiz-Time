@@ -13,10 +13,10 @@ jobs:
       steps:
         - uses: actions/checkout@v4
 
-        # - name: Test
-        #   run: |
-        #     npm install
-        #     npm run test-components
+        - name: Test
+          run: |
+            npm install
+            npm run test-components
 
         - name: Deploy
           if: github.ref == 'refs/heads/main'

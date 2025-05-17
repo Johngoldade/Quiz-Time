@@ -48,7 +48,7 @@ const Quiz = () => {
     return (
       <>
         <div className="home-style">
-          <h1>Welcome to Quiz Time! 2</h1>
+          <h1>Welcome to Quiz Time! 3</h1>
         </div>
         <div className="p-4 text-center">
           <button className="btn btn-primary d-inline-block mx-auto" onClick={handleStartQuiz}>
