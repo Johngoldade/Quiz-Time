@@ -2,9 +2,15 @@ import Quiz from './components/Quiz';
 
 function App() {
   return (
-    <div className="App style">
-      <Quiz />
-    </div>
+    <>
+      <header>
+        <h1>Welcome to Quiz Time!</h1>
+      </header>
+      <div className="App">
+        <Quiz />
+      </div>
+    </>
+    
   );
 }
 
