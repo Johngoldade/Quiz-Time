@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a website where a user can test their knowledge of coding!
+This is a website where a user can test their knowledge of Python!
 
 ## Table of Contents
 
@@ -18,21 +18,21 @@ This is a website where a user can test their knowledge of coding!
 
 ## Installation
 
-To use the project, clone the root directory to your local machine. You will need NODE.js to run the application. Once the code is on your machine run ```npm install``` to install the node packages that the project needs. Once that has completed, run ```npm run build``` followed by ```npm run start:dev```. The application should start running at http://localhost:3001.
+To use the project, follow this [link](https://quiz-time-2ps0.onrender.com/). The website is deployed on a free [Render](https://render.com/) server and may take over a minute to load since free Render deployments sleep when not in use.
 
 ## Usage
 
 Once at the webpage, you'll see this page.
 
-![Home page with a single start quiz button](./assets/startQuiz.png)
+![Home page with a single start quiz button](./assets/homePage.png)
 
 Click on the "Start Quiz" button to get going! You'll be asked a series of 10 multiple choice questions that look like this.
 
-![A quiz question with a question and 4 choices to answer, each choice having a corresponding button labelled as 1-4](./assets/question.png)
+![A quiz question with a question and 4 choices to answer, each choice having a corresponding button labelled as 1-4](./assets/questionPage.png)
 
 Select the button (labelled as 1-4) next to the answer that you believe responds correctly to the question. You'll do this for all 10 questions. Once you've completed the quiz, you'll see this page, which will present your score and give you the option to take the quiz again.
 
-![Quiz complete page with a message that you completed the quiz, your score, and a button to retake the quiz](./assets/quizComplete.png)
+![Quiz complete page with a message that you completed the quiz, your score, and a button to retake the quiz](./assets/completedPage.png)
 
 That's pretty much it. As always, feel free to play around with the site and make sure to report any bugs!
 
@@ -50,7 +50,9 @@ This project has no contribution guidelines.
 
 ## Tests
 
-There are tests developed for this project using [Cypress](https://docs.cypress.io/app/get-started/why-cypress). To run the tests, install and run the project as outlined above in [Installation](#installation). Once the application is running, open a new termainal and navigate to the root directory of the project. Run ```npm run test``` and the tests will run. The results should be diplayed in the terminal window.
+There are tests developed for this project using [Cypress](https://docs.cypress.io/app/get-started/why-cypress). To run the tests, install and run the project as outlined above in [Installation](#installation). Once the application is running, open a new terminal and navigate to the root directory of the project. Run ```npm run test``` and the tests will run. The results should be diplayed in the terminal window.
+
+The components tests will also always run automatically when a pull request is made to the ```develop``` or ```main``` branches thanks to GitHub actions.
 
 ## Questions
 
