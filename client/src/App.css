@@ -1,5 +1,6 @@
 body {
   font-family: 'Rubik', sans-serif;
+  background-color:burlywood;
 }
 
 h1,
@@ -16,12 +17,17 @@ h6 {
   font-style: italic;
 }
 
-.home-style {
+
+header {
+  background-color: cadetblue;
+  color: #36393b;
   text-align: center;
-  background-color: aquamarine;
+  padding: 40px;
+  border-radius: 10px;
+  border: 10px solid #36393b;
+  margin-bottom: 50px;
 }
 
-.style {
-  background-color: cadetblue;
-  color: #36393b
+div {
+  background-color:burlywood;
 }
