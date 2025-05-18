@@ -1,22 +1,23 @@
-# Name of workflow
+# Workflow name
 name: Cypress-Tests
 
-# Trigger workflow on all pull requests
+# Trigger workflow on all pull requests to develop
 on:
     pull_request:
       branches:
         - develop
       
-# Jobs to carry out
+# Job information
 jobs:
   test:
+    # Test name
     name: Cypress-Tests
-    # Operating system to run job on
+    # Operating system to run the worflow on
     runs-on: ubuntu-latest
 
-    # Steps in job
+    # Steps to perform
     steps:
-      # Get code from repo
+      # Get code from the repository
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -25,14 +26,14 @@ jobs:
         with:
           node-version: 21.x
 
-      # Install dependencies
+      # Install the dependencies
       - name: Install Dependencies
         run: npm install
         
-      # Run build
+      # Run the build
       - name: Run Build
         run: npm run build
 
-      # Run tests
+      # Run component tests
       - name: Run Component Tests
         run: npm run test-component
